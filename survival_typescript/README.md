@@ -1,0 +1,2 @@
+# サバイバルTypeScript
+https://typescriptbook.jp
