@@ -1,0 +1,17 @@
+[Unit]
+Description=Puma
+After=network.target
+
+[Service]
+Type=notify
+User=<user>
+WatchdogSec=10
+Environment=RAILS_MASTER_KEY=<master_key_value>
+WorkingDirectory=<app_dir>
+ExecStart=<home_dir>/.rbenv/shims/bundle exec pumactl start -F <app_dir>/config/puma/production.rb
+ExecReload=/bin/kill -TSTP $MAINPID
+ExecStop=/bin/kill -TERM $MAINPID
+Restart=always
+
+[Install]
+WantedBy=sockets.target
