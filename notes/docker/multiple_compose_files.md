@@ -21,8 +21,6 @@ services:
       TZ: "Asia/Tokyo"
     volumes:
       - db_data:/var/lib/postgresql/data
-    ports:
-      - 5432:5432
 
 volumes:
   db_data:
@@ -74,7 +72,7 @@ version: "3"
 services:
   db1:
     ports:
-      - 5433:5432
+      - 5432:5432
 ```
 
 ```sh
@@ -104,7 +102,7 @@ version: "3"
 services:
   db1:
     ports:
-      - 5433:5432
+      - 5432:5432
 ```
 
 ```sh
