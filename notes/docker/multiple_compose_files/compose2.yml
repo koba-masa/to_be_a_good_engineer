@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  db2:
+    image: postgres:14.6
+    environment:
+      POSTGRES_USERNAME: postgres
+      POSTGRES_PASSWORD: postgres123
+      POSTGRES_INITDB_ARGS: "-E UTF8"
+      TZ: "Asia/Tokyo"
+    volumes:
+      - db_data2:/var/lib/postgresql/data
+    ports:
+      - 5433:5432
+
+volumes:
+  db_data2:
+    external: false
