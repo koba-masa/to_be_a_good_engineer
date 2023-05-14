@@ -89,8 +89,8 @@ CONTAINER ID   IMAGE           COMMAND                  CREATED          STATUS 
 - 以下の実行の仕方だと、指定したファイル単体で実行することになり、エラーとなる
   - `docker-compose -f compose.override.yml up -d`
       ```sh
-    % docker-compose -f compose.override.yml up -d
-    service "db1" has neither an image nor a build context specified: invalid compose project
+      % docker-compose -f compose.override.yml up -d
+      service "db1" has neither an image nor a build context specified: invalid compose project
       ```
 
 #### `-f`オプションでファイルを指定する場合
