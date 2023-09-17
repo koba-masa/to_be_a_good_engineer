@@ -4,3 +4,4 @@
 ## 書籍
 - [サバイバルTypeScript](books/survival_typescript/README.md)
 - [機械学習&ディープラーニングのしくみと技術がしっかりわかる教科書](books/ml_dl_textbook/README.md)
+- [Clean Agile 基本に立ち戻れ](/books/clean_agile/README.md)
