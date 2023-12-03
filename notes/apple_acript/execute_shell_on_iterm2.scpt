@@ -1,6 +1,7 @@
+set shell_path to "/path/to/your/script.sh"
+
 tell application "iTerm"
-    set shell_path to "/path/to/your/script.sh"
-    activate
+    run
     try
         set currentWindow to current window
         set isNewWindow to false
